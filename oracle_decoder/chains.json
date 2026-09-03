@@ -1,0 +1,61 @@
+{
+  "_comment": "Per-chain inputs. rpc_url: any RPC with Multicall3 deployed (the public ones here work at this tool's volume). chainlink_registry: file stem in reference-data-directory.vercel.app. redstone_slug: substring that selects this chain's RedStone relayer manifests. pyth_contracts / stork_contract: canonical publisher contracts from the publishers' documentation (Pyth lists a legacy and an upgraded address per chain).",
+  "chains": {
+    "1": {
+      "name": "ethereum",
+      "rpc_url": "https://ethereum-rpc.publicnode.com",
+      "chainlink_registry": "feeds-mainnet",
+      "redstone_slug": "ethereum",
+      "pyth_contracts": ["0x4305FB66699C3B2702D4d05CF36551390A4c69C6", "0x14b9932cc9AC8Ee03301665a8644A753f46D8552"],
+      "stork_contract": "0x035B5438444f26e6Aab81E91d475b7B1Ac4Fb22b"
+    },
+    "8453": {
+      "name": "base",
+      "rpc_url": "https://mainnet.base.org",
+      "chainlink_registry": "feeds-ethereum-mainnet-base-1",
+      "redstone_slug": "base",
+      "pyth_contracts": ["0x8250f4aF4B972684F7b336503E2D6dFeDeB1487a", "0xbC16aee60f64864882BC6C4E428e148Fc0E272F5"],
+      "stork_contract": "0x647DFd812BC1e116c6992CB2bC353b2112176fD6"
+    },
+    "42161": {
+      "name": "arbitrum",
+      "rpc_url": "https://arb1.arbitrum.io/rpc",
+      "chainlink_registry": "feeds-ethereum-mainnet-arbitrum-1",
+      "redstone_slug": "arbitrum",
+      "pyth_contracts": ["0xff1a0f4744e8582DF1aE09D5611b887B6a12925C"],
+      "stork_contract": "0xacC0a0cF13571d30B4b8637996F5D6D774d4fd62"
+    },
+    "999": {
+      "name": "hyperevm",
+      "rpc_url": "https://rpc.hyperliquid.xyz/evm",
+      "chainlink_registry": "feeds-hyperliquid-mainnet",
+      "redstone_slug": "hyperevm",
+      "pyth_contracts": ["0xe9d69CdD6Fe41e7B621B4A688C5D1a68cB5c8ADc"],
+      "stork_contract": "0xacC0a0cF13571d30B4b8637996F5D6D774d4fd62"
+    },
+    "143": {
+      "name": "monad",
+      "rpc_url": "https://rpc.monad.xyz",
+      "chainlink_registry": "feeds-monad-mainnet",
+      "redstone_slug": "monad",
+      "pyth_contracts": ["0x2880aB155794e7179c9eE2e38200202908C17B43", "0xB754BA51E3861Ac0Cb67f73CD046dE790A36508d"],
+      "stork_contract": "0xacC0a0cF13571d30B4b8637996F5D6D774d4fd62"
+    },
+    "747474": {
+      "name": "katana",
+      "rpc_url": "https://rpc.katana.network",
+      "chainlink_registry": "feeds-polygon-mainnet-katana",
+      "redstone_slug": "katana",
+      "pyth_contracts": [],
+      "stork_contract": null
+    },
+    "4663": {
+      "name": "robinhood",
+      "rpc_url": "https://rpc.mainnet.chain.robinhood.com",
+      "chainlink_registry": "feeds-robinhood-mainnet",
+      "redstone_slug": "robinhood",
+      "pyth_contracts": [],
+      "stork_contract": "0xacC0a0cF13571d30B4b8637996F5D6D774d4fd62"
+    }
+  }
+}
